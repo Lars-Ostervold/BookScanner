@@ -15,7 +15,7 @@ const AboutScreen = () => {
       <Text style={styles.text}>
         The code for BookScanner is licensed under the Apache License 2.0 and is available on GitHub. 
         You can view the source code {' '}
-        <Text style={styles.link} onPress={() => Linking.openURL('https://github.com/yourusername/bookscanner')}>
+        <Text style={styles.link} onPress={() => Linking.openURL('https://github.com/Lars-Ostervold/BookScanner')}>
           here
         </Text>.
       </Text>

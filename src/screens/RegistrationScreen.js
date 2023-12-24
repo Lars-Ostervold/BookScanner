@@ -62,6 +62,22 @@ export default function RegistrationScreen({ navigation }) {
         if (errorCode === 'auth/operation-not-allowed') {
           Alert.alert('Oops!', 'Operation not allowed.');
           return;
+        } 
+        if (errorCode === 'auth/missing-password') {
+          Alert.alert('Oops!', 'Please enter a password.');
+          return;
+        }
+        if (errorCode === 'auth/missing-email') {
+          Alert.alert('Oops!', 'Please enter an email address.');
+          return;
+        }
+        if (errorCode === 'auth/invalid-credential') {
+          Alert.alert('Oops!', 'Either your email or password is incorrect.');
+          return;
+        }
+        else {
+          Alert.alert('Oops!', errorMessage);
+          return;
         }
 
       });

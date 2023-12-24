@@ -41,6 +41,22 @@ export default function SignInScreen({ navigation }) {
         if (errorCode === 'auth/wrong-password') {
           Alert.alert('Oops!', 'Incorrect password.');
           return;
+        } 
+        if (errorCode === 'auth/missing-password') {
+          Alert.alert('Oops!', 'Please enter a password.');
+          return;
+        }
+        if (errorCode === 'auth/missing-email') {
+          Alert.alert('Oops!', 'Please enter an email address.');
+          return;
+        }
+        if (errorCode === 'auth/invalid-credential') {
+          Alert.alert('Oops!', 'Either your email or password is incorrect.');
+          return;
+        }
+        else {
+          Alert.alert('Oops!', errorMessage);
+          return;
         }
       });
   };
