@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, TextInput, Button, Alert, StyleSheet } from 'react-native';
+import { Text, View, TextInput, Button, Alert, StyleSheet, TouchableOpacity } from 'react-native';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 
@@ -67,10 +67,12 @@ export default function SignInScreen({ navigation }) {
       <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
       <TextInput style={styles.input} placeholder="Password" onChangeText={setPassword} value={password} secureTextEntry />
       <View style={styles.buttonContainer}>
-        <Button title="Sign In" onPress={signIn} />
+        <TouchableOpacity style={styles.button} onPress={signIn}>
+          <Text style={styles.buttonText}>Sign In</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.footer}>
-        <Text>Don't have an account? <Text style={styles.footerLink} onPress={onFooterLinkPress}>Sign up</Text></Text>
+        <Text style={styles.footerText}>Don't have an account? <Text style={styles.footerLink} onPress={onFooterLinkPress}>Sign up</Text></Text>
       </View>
     </View>
   );
@@ -100,5 +102,23 @@ const styles = StyleSheet.create({
   },
   footerLink: {
     color: '#007BFF',
+  },
+  button: {
+    backgroundColor: '#007BFF',
+    padding: 10,
+    borderRadius: 5,
+    width: '40%',
+    alignSelf: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    textAlign: 'center',
+  },
+  footerText: {
+    color: '#333',
+  },
+  footerLink: {
+    color: '#007BFF',
+    fontWeight: 'bold',
   },
 });

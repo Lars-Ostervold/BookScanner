@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Text, View, TextInput, Button, Alert, StyleSheet } from 'react-native';
-import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
-import { getFirestore, doc, collection, getDocs, setDoc, getDoc } from 'firebase/firestore';
+import { Text, View, TextInput, Button, Alert, StyleSheet, TouchableOpacity } from 'react-native';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getFirestore, doc, setDoc } from 'firebase/firestore';
 
 export default function RegistrationScreen({ navigation }) {
   const [username, setUsername] = useState('');
@@ -90,12 +90,14 @@ export default function RegistrationScreen({ navigation }) {
       <TextInput style={styles.input} placeholder="Username" onChangeText={setUsername} value={username} />
       <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
       <TextInput style={styles.input} placeholder="Password" onChangeText={setPassword} value={password} secureTextEntry />
-      <TextInput style={styles.input} placeholder="Confirm Password" onChangeText={setConfirmPassword} value={confirmPassword} secureTextEntry /> 
+      <TextInput style={styles.input} placeholder="Confirm Password" onChangeText={setConfirmPassword} value={confirmPassword} secureTextEntry />
       <View style={styles.buttonContainer}>
-        <Button title="Register" onPress={onRegisterPress} />
+        <TouchableOpacity style={styles.button} onPress={onRegisterPress}>
+          <Text style={styles.buttonText}>Register</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.footer}>
-        <Text>Already have an account? <Text style={styles.footerLink} onPress={onFooterLinkPress}>Sign In</Text></Text>
+        <Text style={styles.footerText}>Already have an account? <Text style={styles.footerLink} onPress={onFooterLinkPress}>Sign In</Text></Text>
       </View>
     </View>
   );
@@ -123,7 +125,22 @@ const styles = StyleSheet.create({
   footer: {
     alignItems: 'center',
   },
+  button: {
+    backgroundColor: '#007BFF',
+    padding: 10,
+    borderRadius: 5,
+    width: '40%',
+    alignSelf: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    textAlign: 'center',
+  },
+  footerText: {
+    color: '#333',
+  },
   footerLink: {
     color: '#007BFF',
+    fontWeight: 'bold',
   },
 });
