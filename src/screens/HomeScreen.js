@@ -4,6 +4,7 @@ import { getAuth, signOut } from 'firebase/auth';
 import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFocusEffect } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
 
 
 export default function HomeScreen({ navigation }) {
@@ -90,7 +91,7 @@ export default function HomeScreen({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity style={[styles.tile, styles.tile1]} onPress={() => navigation.navigate('User Library')}>
           <View style={styles.tileIconContainer}>
-            <Icon name="book" size={30} color="#FFF" />
+            <Ionicons name="library" size={30} color="#FFF" />
           </View>
           <View style={styles.tileTextContainer}>
             <Text style={styles.tileText}>Go to Library</Text>

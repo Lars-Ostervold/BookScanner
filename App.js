@@ -12,7 +12,9 @@ import SplashScreen from './src/screens/SplashScreen';
 import AboutScreen from './src/screens/AboutScreen';
 import './src/services/FirebaseConfig';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+
 import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -65,7 +67,7 @@ export default function App() {
         options={{ 
           title: 'Your Library',
           tabBarIcon: ({ color, size }) => (
-            <FontAwesome name="book" color={color} size={size} />
+            <Ionicons name="library" color={color} size={size} />
           ),
         }} 
       />
