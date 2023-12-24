@@ -50,10 +50,3 @@ The app can be downloaded from the Apple App Store here - INSERT LINK WHEN AVAIL
 
 ## License
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
-
-## FAQs
-- **Q: How do I scan a book?**
-- A: From the main screen, tap the 'Scan' button and point your device's camera at the ISBN of a book.
-
-## Version History
-- **1.0.0**: Initial release.
