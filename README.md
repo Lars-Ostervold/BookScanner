@@ -1,4 +1,6 @@
 # BookScanner
+## !!!!
+I never got around to publishing this app officially since I didn't have an Apple developer account. If somebody wants to publish it, go for it.
 
 ## Overview
 This app is designed to help you manage your book library. With the ability to scan, catalog, and organize your books.
@@ -18,7 +20,7 @@ This app is designed to help you manage your book library. With the ability to s
 ## Installation
 
 ### iOS Install
-The app can be downloaded from the Apple App Store here - INSERT LINK WHEN AVAILABLE
+The app can be downloaded from the Apple App Store here - NOT PUBLISHED.
 
 ### Prerequisites
 - Node.js
