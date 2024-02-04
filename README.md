@@ -1,8 +1,11 @@
 # BookScanner
 ## !!!!
-I never got around to publishing this app officially since I didn't have an Apple developer account. If somebody wants to publish it, go for it.
+I never got around to publishing this app officially since I didn't have an Apple developer account. If somebody wants to publish it, go for it. Video of app functionality below.
+
+https://github.com/Lars-Ostervold/BookScanner/assets/122698832/763918f7-7806-4605-9a7c-3c48a72f647f
 
 ## Overview
+
 This app is designed to help you manage your book library. With the ability to scan, catalog, and organize your books.
 
 ## Features
