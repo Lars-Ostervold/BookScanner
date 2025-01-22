@@ -1,8 +1,5 @@
 # BookScanner
-## !!!!
-I never got around to publishing this app officially since I didn't have an Apple developer account. If somebody wants to publish it, go for it. Video of app functionality below.
-
-https://github.com/Lars-Ostervold/BookScanner/assets/122698832/763918f7-7806-4605-9a7c-3c48a72f647f
+I never ended up deploying this to the App Store since there are other free options available. Just wanted to build an App 🙂. If somebody wants to chuck it on the app store, be my guest.
 
 ## Overview
 
@@ -52,6 +49,7 @@ The app can be downloaded from the Apple App Store here - NOT PUBLISHED.
 ### Folder Structure
 - `src/screens/`: Contains the different screens of the app.
 - `src/services/`: Contains Firebase authentication and camera auth.
+
 
 ## License
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
