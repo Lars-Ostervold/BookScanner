@@ -1,6 +1,9 @@
 # BookScanner
 I never ended up deploying this to the App Store since there are other free options available. Just wanted to build an App 🙂. If somebody wants to chuck it on the app store, be my guest.
 
+## Demo Video
+https://github.com/Lars-Ostervold/BookScanner/assets/122698832/763918f7-7806-4605-9a7c-3c48a72f647f
+
 ## Overview
 
 This app is designed to help you manage your book library. With the ability to scan, catalog, and organize your books.
